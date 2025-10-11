@@ -21,43 +21,16 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/brands.css" />
-<style>
-  /* Darker beige background */
-  body { background-color: #efe3d1 !important; }
-
-  /* Make IG + Email buttons dark cookie-brown and circular */
-  .button-stack .button {
-    background-color: #c3a682 !important;   /* dark cookie-brown */
-    border-radius: 50% !important;
-    width: 54px !important;
-    height: 54px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 0 !important;
-    box-shadow: 0 2px 6px rgba(0,0,0,.15) !important;
-    transition: background-color .2s ease, transform .15s ease !important;
-  }
-
-  .button-stack .button:hover {
-    background-color: #b08f68 !important;   /* darker on hover */
-    transform: translateY(-2px) !important;
-  }
-
-  /* Make the icons white for contrast and a consistent size */
-  .button-stack .button img.icon {
-    width: 28px !important;
-    height: 28px !important;
-    filter: brightness(0) invert(1) !important;
-  }
-</style>
 
   <style>
+    /* ----------- COLORS ----------- */
     body {
-      background-color: #efe3d1; /* light beige background */
+      background-color: #e7d6be; /* darker beige background */
       color: #2b1f18; /* warm dark brown text */
+      font-family: "Inter", system-ui, sans-serif;
     }
 
+    /* ----------- LAYOUT ----------- */
     .container {
       display: flex;
       flex-direction: column;
@@ -68,18 +41,19 @@
       text-align: center;
     }
 
+    /* ----------- LOGO ----------- */
     .avatar {
       width: 160px;
       height: 160px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #d7c7b6;
+      border: 3px solid #cbb394;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
       margin-bottom: 1rem;
     }
 
+    /* ----------- TEXT ----------- */
     h1 {
-      font-family: "Inter", system-ui, sans-serif;
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
@@ -91,6 +65,7 @@
       max-width: 400px;
     }
 
+    /* ----------- BUTTON STACK ----------- */
     .button-stack {
       display: flex;
       flex-direction: column;
@@ -99,30 +74,34 @@
       max-width: 320px;
     }
 
+    /* ----------- BUTTONS ----------- */
     .button {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
       text-decoration: none;
-      color: #2b1f18;
-      background-color: #eaddcf;
+      color: #ffffff; /* white text/icons for contrast */
+      background-color: #a07855; /* darker cookie-brown */
       border-radius: 12px;
       padding: 0.8rem 1rem;
       font-weight: 600;
       transition: background-color 0.2s ease, transform 0.15s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .button:hover {
-      background-color: #d7c7b6;
+      background-color: #8f6845; /* slightly darker on hover */
       transform: translateY(-2px);
     }
 
     .icon {
       width: 20px;
       height: 20px;
+      filter: brightness(0) invert(1); /* makes icons white */
     }
 
+    /* ----------- FOOTER ----------- */
     footer {
       margin-top: 1.5rem;
       font-size: 0.85rem;
@@ -139,35 +118,3 @@
 <body>
   <div class="container">
     <!-- Logo -->
-    <img class="avatar" src="images/logo.png" srcset="images/logo.png 2x" alt="Mocha’s Oven logo" />
-
-    <h1>Mocha’s Oven</h1>
-    <p>Homemade thick cookies baked to perfection with crisp edges and gooey centers.</p>
-
-    <!-- Buttons -->
-    <div class="button-stack" role="navigation">
-
-      <!-- Instagram -->
-      <a class="button"
-         href="https://instagram.com/mochasoven"
-         target="_blank" rel="noopener">
-        <img class="icon" src="images/icons/instagram.svg" alt="Instagram logo" />
-        Instagram
-      </a>
-
-      <!-- Email -->
-      <a class="button"
-         href="mailto:mochasoven@gmail.com"
-         target="_blank" rel="noopener">
-        <img class="icon" src="images/icons/generic-email.svg" alt="Email icon" />
-        Email Us
-      </a>
-
-    </div>
-
-    <footer>
-      <p>© 2025 Mocha’s Oven | Made with ❤️
-    </footer>
-  </div>
-</body>
-</html>
