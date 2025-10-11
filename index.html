@@ -21,6 +21,36 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/brands.css" />
+<style>
+  /* Darker beige background */
+  body { background-color: #efe3d1 !important; }
+
+  /* Make IG + Email buttons dark cookie-brown and circular */
+  .button-stack .button {
+    background-color: #c3a682 !important;   /* dark cookie-brown */
+    border-radius: 50% !important;
+    width: 54px !important;
+    height: 54px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15) !important;
+    transition: background-color .2s ease, transform .15s ease !important;
+  }
+
+  .button-stack .button:hover {
+    background-color: #b08f68 !important;   /* darker on hover */
+    transform: translateY(-2px) !important;
+  }
+
+  /* Make the icons white for contrast and a consistent size */
+  .button-stack .button img.icon {
+    width: 28px !important;
+    height: 28px !important;
+    filter: brightness(0) invert(1) !important;
+  }
+</style>
 
   <style>
     body {
