@@ -404,7 +404,7 @@ a.button[href^="mailto:"]:hover {
 /* Icon color (approximation of #684939) */
 a.button[href*="instagram.com"] .icon,
 a.button[href^="mailto:"] .icon {
-  filter: invert(34%) sepia(15%) saturate(864%) hue-rotate(356deg)
-          brightness(92%) contrast(92%) !important;
+   filter: invert(28%) sepia(9%) saturate(900%) hue-rotate(352deg)
+          brightness(95%) contrast(90%) !important; /* close to #684939 */
 }
 
