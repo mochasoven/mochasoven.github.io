@@ -378,5 +378,34 @@ ul li {
 	font-style:normal;
 	font-weight:800;
 	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.eot');
-	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.eot?#iefix') format('embedded-opentype'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2') format('woff2'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff') format('woff'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.ttf') format('truetype'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.svg#OpenSans') format('svg');
+	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.eot?#iefix') format('embedded-opentype'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2') format('woff2'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.ttf') format('truetype'),url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.svg#OpenSans') format('svg');
+}
+
+/* =========================================================
+   Mocha’s Oven overrides (Instagram + Email only)
+   ========================================================= */
+
+/* Button background: darker cookie-brown for IG + Email */
+a.button[href*="instagram.com"],
+a.button[href^="mailto:"] {
+  /* Use !important so this wins even if inline styles exist */
+  background-color:#a07855 !important;   /* cookie-brown */
+  color:#ffffff !important;              /* white text for contrast */
+  border: 1px solid #8f6845 !important;
+}
+
+/* Hover state */
+a.button[href*="instagram.com"]:hover,
+a.button[href^="mailto:"]:hover {
+  background-color:#8f6845 !important;   /* a shade darker on hover */
+}
+
+/* Icons: tint to a darker brown (no new images needed) */
+a.button[href*="instagram.com"] .icon,
+a.button[href^="mailto:"] .icon {
+  /* Many browsers won't honor fill on external SVGs in <img>, so use filter */
+  filter: invert(22%) sepia(22%) saturate(450%) hue-rotate(8deg) brightness(90%) contrast(90%) !important; /* ~#5a3a1e */
+  /* If you ever inline the SVGs, you can also do:
+     fill:#5a3a1e !important;
+  */
 }
