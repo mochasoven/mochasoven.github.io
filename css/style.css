@@ -390,8 +390,8 @@ ul li {
 /* Instagram + Email button background */
 a.button[href*="instagram.com"],
 a.button[href^="mailto:"] {
-  background-color: #d3bc9c !important; /* new beige button color */
-  color: #1a1a1a !important;            /* dark text for contrast */
+  background-color: #644535 !important; /* new beige button color */
+  color: #fff5e2 !important;            /* dark text for contrast */
 }
 
 /* Keep the same hover color */
