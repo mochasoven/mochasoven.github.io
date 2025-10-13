@@ -403,7 +403,7 @@ a.button[href^="docs.google.com"]:hover {
 
 /* --- Make Instagram + Email icons #fff5e2 --- */
 a.button[href*="instagram.com"] .icon,
-a.button[href^="docs.google.com" .icon {
+a.button[href^="docs.google.com"] .icon {
   filter: brightness(0) saturate(100%) invert(96%) sepia(8%) saturate(428%)
           hue-rotate(7deg) brightness(107%) contrast(101%) !important;
 }
