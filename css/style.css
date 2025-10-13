@@ -389,14 +389,14 @@ ul li {
 
 /* Instagram + Email button background */
 a.button[href*="instagram.com"],
-a.button[href^="mailto:"] {
+a.button[href^="docs.google.com"] {
   background-color: #644535 !important; /* new beige button color */
   color: #fff5e2 !important;            /* dark text for contrast */
 }
 
 /* Keep the same hover color */
 a.button[href*="instagram.com"]:hover,
-a.button[href^="mailto:"]:hover {
+a.button[href^="docs.google.com"]:hover {
   background-color: #8f6845 !important; /* your darker brown hover */
   color: #ffffff !important;            /* switch to white text */
 }
