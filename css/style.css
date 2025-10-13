@@ -389,21 +389,21 @@ ul li {
 
 /* Instagram + Email button background */
 a.button[href*="instagram.com"],
-a.button[href^="docs.google.com"] {
+a.button[href^="docs.google.com/forms"] {
   background-color: #644535 !important; /* new beige button color */
   color: #fff5e2 !important;            /* dark text for contrast */
 }
 
 /* Keep the same hover color */
 a.button[href*="instagram.com"]:hover,
-a.button[href^="docs.google.com"]:hover {
+a.button[href^="docs.google.com/forms"]:hover {
   background-color: #8f6845 !important; /* your darker brown hover */
   color: #ffffff !important;            /* switch to white text */
 }
 
 /* --- Make Instagram + Email icons #fff5e2 --- */
 a.button[href*="instagram.com"] .icon,
-a.button[href^="docs.google.com"] .icon {
+a.button[href^="docs.google.com/forms"] .icon {
   filter: brightness(0) saturate(100%) invert(96%) sepia(8%) saturate(428%)
           hue-rotate(7deg) brightness(107%) contrast(101%) !important;
 }
